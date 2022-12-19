@@ -2,10 +2,35 @@
 <html>
 <head>
   <title>E16</title>
+  <style>
+	.form-element {
+		display: flex;
+		justify-content: space-between;
+		padding: 5px;
+	}
+	.form-element > input, 
+	.form-element > button {
+		padding: 8px;
+	}
+  </style>
+  
+  <script>
+	function sendMail() {
+		const recipient = 'admin@e16.dk';
+		const subject = 'Anmodning om e16 adresse';
+		const name = 'Navn: ' + document.getElementById("name").value;
+		const desiredAddress = 'Ønskede adresse: ' + document.getElementById("desired-address").value;
+		const currentAddress = 'Nuværende email: ' + document.getElementById("current-address").value;
+
+		document.getElementById("popup").style.display = "block";
+
+		window.open('mailto:' + recipient + '?subject=' + subject + '&body=' + name + '%0D%0A' + desiredAddress + '%0D%0A' + currentAddress);
+	}
+  </script>
 </head>
 <body>
 
-<h2>Eeeeeeeeeeeeeeeeeee16!</h2>
+<h1>Eeeeeeeeeeeeeeeeeee16!</h1>
 
 <p>Kom til stiftende generalforsamling 9. februar 2023 kl. 18:00</p>
 <a href="https://docs.google.com/document/d/10J3GuccIKFl4Bd1Ajy9S6sRGEWncLR6HGhHZIoP-fhQ/edit" target="_blank">Dagsorden:</a>
@@ -21,6 +46,31 @@
 	<li>Årshjul</li>
 	<li>Dato for næste foreningsmøde</li>
 </ul>
+
+<h3 style="margin-top: 75px;">Ønsker du dig din helt egen e16-mail?</h3>
+
+<ul style="width: 500px; list-style-type: none; background-color: whitesmoke; padding: 5px; border-radius: 5px;">
+	<li class="form-element">
+		<label for="name">Dit navn</label>
+		<input type="text" id="name" placeholder="Jakob Mejlhede Nielsen">
+	</li>
+	<li class="form-element">
+		<label for="desired-address">Din ønskede @e16-adresse</label>
+		<input type="text" id="desired-address" placeholder="jakob@e16.dk">
+	</li>
+	<li class="form-element">
+		<label for="current-address">Din nuværende email-adresse</label>
+		<input type="text" id="current-address" placeholder="jakob@gmail.com">
+	</li>
+	<li>
+		<button onclick="sendMail()"> Andmod</button>
+	</li>
+</ul>
+
+<div id="popup" style="background-color: rgb(228, 255, 228); width: 350px; border-radius: 5px; padding: 5px; display: none;" >
+	<p style="margin-top: 3px">Tak for din anmodning. Når du har sendt mailen, vil den blive modtaget af admin@e16.dk der vil behandle den snarest muligt.</p>
+	<p style="margin-bottom: 3px"> Du vil på et tidspunkt modtage en mail fra <i>one.com Kundeservice</i>, hvor du bedes bekræfte videresendelsen. Når du har trykket på linket, vil videresendelsen være aktiv.</p>
+</div>
 
 </body>
 </html>
