@@ -12,71 +12,102 @@
 	.form-element > button {
 		padding: 8px;
 	}
-  </style>
-  
-  <script>
-	function sendMail() {
-		const recipient = 'admin@e16.dk';
-		const subject = 'Anmodning om e16 adresse';
-		const name = 'Navn: ' + document.getElementById("name").value;
-		const desiredAddress = 'Ønskede adresse: ' + document.getElementById("desired-address").value;
-		const currentAddress = 'Nuværende email: ' + document.getElementById("current-address").value;
-
-		document.getElementById("popup").style.display = "block";
-
-		window.open('mailto:' + recipient + '?subject=' + subject + '&body=' + name + '%0D%0A' + desiredAddress + '%0D%0A' + currentAddress);
+	table, th, td {
+		border: 1px solid;
 	}
-  </script>
+	table {
+		border-collapse: collapse;
+	}
+	h2 {
+		margin-top: 25px;
+		margin-bottom: 15px;
+	}
+  </style>
 </head>
 <body>
 
 <h1>Eeeeeeeeeeeeeeeeeee16!</h1>
 
-<p>Kom til stiftende generalforsamling 9. februar 2023 kl. 18:00</p>
-<a href="https://docs.google.com/document/d/10J3GuccIKFl4Bd1Ajy9S6sRGEWncLR6HGhHZIoP-fhQ/edit" target="_blank">Dagsorden:</a>
-<ul>
-	<li>Valg af dirigent og referent</li>
-	<li>Præsentation af det praktiske (CVR reveal) v. Marie, Asta(?)</li>
-	<li>Formål med foreningen, Vedtægter?</li>
-	<li>Forventninger bordet rundt</li>
-	<li>Ansvarsområder / udvalg - Forperson, kasser?</li>
-	<li>SoMe, SoMe-ansvarlig?</li>
-	<li>Indhold på <a href="http://e16.dk/" target="_blank">e16.dk</a></li>
-	<li><a href="https://docs.google.com/spreadsheets/d/10ElDToRd8QutxWjMkPSrXCDgRY37Ye7iKWNYOparOkE/edit#gid=0" target="_blank">Indsamling af mailadresser</a></li>
-	<li>Logo?</li>
-	<li>Kontingent</li>
-	<li>Kageordning</li>
-	<li>Årshjul</li>
-		<ul>
-			<li>Gl. elev weekend / grundtweek</li>
-		</ul>
-	<li>Dato for næste foreningsmøde</li>
-	<li>Evt.</li>
-</ul>
+<h2>Vigtige links</h2>
+<div style="display: flex; flex-direction: column;">
+	<a href="https://drive.google.com/drive/u/0/folders/1WUDqpwf_gQmtoYr-CPrdd6_CKSbgUBxr" target="_blank">Google Drive</a>
+	<a href="https://www.instagram.com/foreningen_e16">Foreningens Instagram</a>
+</div>
 
-<h3 style="margin-top: 75px;">Ønsker du dig din helt egen e16-mail?</h3>
+<h2>Vigtige datoer</h2>
+<table style="width: 350px;">
+	<tr>
+		<th>Dato</th>
+		<th>Event</th>
+	</tr>
+	<tr>
+		<td>23/06-2024</td>
+		<td>Q2</td>
+	</tr>
+	<tr>
+		<td>21/09-2024</td>
+		<td>Q3</td>
+	</tr>
+	<tr>
+		<td>07/12-2024</td>
+		<td>Q4</td>
+	</tr>
+	<tr>
+		<td>13/02-2025</td>
+		<td>Ordinær generalforsamling</td>
+	</tr>
+	<tr>
+		<td>01/03-2025</td>
+		<td>Q1</td>
+	</tr>
+</table>
 
-<ul style="width: 500px; list-style-type: none; background-color: whitesmoke; padding: 5px; border-radius: 5px;">
-	<li class="form-element">
-		<label for="name">Dit navn</label>
-		<input type="text" id="name" placeholder="Jakob Mejlhede Nielsen">
-	</li>
-	<li class="form-element">
-		<label for="desired-address">Din ønskede @e16-adresse</label>
-		<input type="text" id="desired-address" placeholder="jakob@e16.dk">
-	</li>
-	<li class="form-element">
-		<label for="current-address">Din nuværende email-adresse</label>
-		<input type="text" id="current-address" placeholder="jakob@gmail.com">
-	</li>
-	<li>
-		<button onclick="sendMail()"> Anmod</button>
-	</li>
-</ul>
+<h2>Udvalg</h2>
+<table style="width: 500px;">
+	<tr>
+		<th>Udvalg</th>
+		<th>Medlemmer</th>
+	</tr>
+	<tr>
+		<td>Økonomiudvalg</td>
+		<td>Malthe, Sophie</td>
+	</tr>
+	<tr>
+		<td>Sekretariatet</td>
+		<td>Laura, Nina, Teresa</td>
+	</tr>
+	<tr>
+		<td>Net- og interne anliggende-udvalget</td>
+		<td>Adam, Asta, Line</td>
+	</tr>
+	<tr>
+		<td>MitID-udvalget/Foreningsrepræsentanten</td>
+		<td>Mikkel</td>
+	</tr>
+	<tr>
+		<td>SoMe-udvalget</td>
+		<td>Ella, Evelina</td>
+	</tr>
+	<tr>
+		<td>Årsskriftsudvalget</td>
+		<td>Christian, Marie</td>
+	</tr>
+	<tr>
+		<td>Optagelsesudvalget</td>
+		<td>Marie, Nina, Teresa</td>
+	</tr>
+	<tr>
+		<td>FESTUDVALGET</td>
+		<td>Christopher, Kirstine, Rasmus</td>
+	</tr>
+</table>
 
-<div id="popup" style="background-color: rgb(228, 255, 228); width: 350px; border-radius: 5px; padding: 5px; display: none;" >
-	<p style="margin-top: 3px">Tak for din anmodning. Når du har sendt mailen, vil den blive modtaget af admin@e16.dk der vil behandle den snarest muligt.</p>
-	<p style="margin-bottom: 3px"> Du vil på et tidspunkt modtage en mail fra <i>one.com Kundeservice</i>, hvor du bedes bekræfte videresendelsen. Når du har trykket på linket, vil videresendelsen være aktiv.</p>
+
+
+<h2>Foreningens vedtægter</h2>
+<div style="display: flex; flex-direction: column;">
+	<a href="VEDTÆGTER.pdf">VEDTÆGTER.pdf</a>
+	<object style="display: block; margin: 0 auto;" data="VEDTÆGTER.pdf" type="application/pdf" width="80%" height="1200px"></object>
 </div>
 
 </body>
