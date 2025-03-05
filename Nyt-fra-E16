@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E16 - Tidligere events</title>
+  <style>
+	table, th, td {
+		border: 1px solid;
+	}
+	td {
+		padding-left: 2px;
+		padding-right: 10px;
+	}
+	table {
+		border-collapse: collapse;
+	}
+	h2 {
+		margin-top: 25px;
+		margin-bottom: 15px;
+	}
+  </style>
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1375536736700495"
+  	crossorigin="anonymous"></script> -->
+</head>
 
+<body>
+
+<a href="index.html">
+    <img style="height: 50px;" src="https://static.vecteezy.com/system/resources/previews/006/991/685/non_2x/arrow-back-icon-which-is-suitable-for-commercial-work-and-easily-modify-or-edit-it-vector.jpg">
+</a>
+
+<h1>Nyt fra E16</h1>
+
+<h1>Årsberetning 2024</h1>
+
+
+</body>
+</html>
