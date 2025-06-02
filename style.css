@@ -31,7 +31,7 @@ h2 {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 .topnav a {
@@ -40,7 +40,8 @@ h2 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
+  width: 17.43%;
 }
 
 .topnav a:hover {
@@ -49,6 +50,6 @@ h2 {
 }
 
 .topnav a.active {
-  background-color: #04aa6d;
+  background-color: rgb(39, 38, 38);
   color: white;
 }
