@@ -5,6 +5,8 @@ body {
 .content {
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 70px;
+  margin-bottom: 100px;
   background-color: white;
   padding: 20px;
 }
@@ -36,16 +38,21 @@ h2 {
   overflow: hidden;
   background-color: black;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .topnav a {
+  display: flex;
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-decoration: none;
   font-size: 20px;
-  width: 17.43%;
+  width: 100%;
+  justify-content: center;
 }
 
 .topnav a:hover {
